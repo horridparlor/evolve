@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lue Fantasiaa Nyt!</title>
+    <meta name="description" content="horrid.fi Tarjoaa Kotimaisen Kauhun ja Fantasian suoraan selaimessasi!">
+    <meta property="og:image" content="https://horrid.fi/server/cover-images/read.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="shortcut icon" href="./favicon.png">
+    <script src="script.js?v=7" type="module"></script>
+</head>
+<body>
+    <div id="banner"></div>
+    <div class="text settings">
+        <label class="input-label">Fonttikoko</label>
+        <input class="input" type="number" id="fontSize" value="13">
+        <button class="input submit" id="updateSettings">OK</button>
+        <button class="input copy-link" id="copyLink">Kopioi Linkki</button>
+    </div>
+    <select class="input chapter-selector" id="chapterSelector"></select>
+    <div class="text title" id="title"></div>
+    <div class="text body" id="textBody"></div>
+    <div class="selector-holder">
+        <button class="input selector-button" id="previous">Edellinen</button>
+        <button class="input selector-button" id="next">Seuraava</button>
+    </div>
+    <div class="comment-form" id="commentForm">
+        <textarea class="input comment-body" type="text" id="commentBody" placeholder="Kommentoi" maxlength="256"></textarea>
+        <button class="input submit post-button" type="submit" id="postComment">Julkaise</button>
+    </div>
+    <div class="comment-containr" id="comments"></div>
+</body>
+</html>

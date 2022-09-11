@@ -1,0 +1,35 @@
+.banner {
+    --primary: #fdade5;
+    --secondary: #f719c7;
+    --border: #fff;
+    --info: #69ebf0;
+    --info-hover: #98fcff;
+    --element-margin: 1.2rem;
+
+    display: flex;
+    background-color: var(--primary);
+    border-bottom: 0.2rem solid var(--border);
+}
+
+.banner-icon {
+    border-radius: 50%;
+    margin-left: var(--element-margin);
+    border: 0.2rem solid var(--secondary);
+}
+
+.banner-badge {
+    position: absolute;
+    border-radius: 0.6rem;
+    padding: 0.7rem 0.9rem;
+    color: var(--border);
+    background-color: var(--secondary);
+    border: 0.2rem solid var(--info);
+    text-decoration: none;
+    transform: translateY(+12.5%);
+    margin-left: var(--element-margin);
+    font-family: sans-serif;
+}
+
+.banner-badge:hover{
+    color: var(--info-hover);
+}
